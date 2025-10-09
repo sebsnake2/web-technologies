@@ -1,0 +1,40 @@
+.submenu-link {
+    color: #800080;
+}
+
+.menu-link {
+    color: #008000;
+}
+
+.submenu-berries {
+    list-style-type: square;
+}
+
+.submenu-veggies {
+    list-style-type: none;
+}
+
+.submenu-item-potato {
+  list-style-image: url(../icons/potato-logo.png);
+}
+
+.submenu-item-cucumber {
+  list-style-image: url(../icons/cucumber-logo.png);
+}
+
+.submenu-item-beet {
+    list-style-image: url(../icons/beet-logo.png);
+}
+
+nav ul ul {
+    list-style-type: none;
+}
+
+.submenu-berries a {
+    text-decoration: none;
+}
+
+ol {
+    list-style-position: inside;
+    padding-left: 0;
+}

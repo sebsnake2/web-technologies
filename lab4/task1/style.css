@@ -1,0 +1,46 @@
+* {
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    line-height: 40px;
+}
+
+h1 {
+    text-decoration: underline;
+}
+
+p {
+    text-align: center;
+    color: #008000;
+}
+
+div {
+    text-align: justify;
+}
+
+.is-highlighted {
+    color: #ff0000;
+}
+
+.u-nowrap {
+    white-space: nowrap;
+}
+
+#second-paragraph {
+    font-style: italic;
+    font-weight: bold;
+}
+
+.is-shadowed {
+    text-shadow: 5px -5px 3px #0000ff;
+}
+
+.text-emph {
+    text-decoration: line-through;
+    text-transform: uppercase;
+    text-indent: 50px;
+}
+
+.text-spaced {
+    letter-spacing: 30px;
+    word-spacing: 50px;
+}

@@ -1,0 +1,48 @@
+.page {
+    text-align: center;
+}
+
+.recipe-title {
+    color: #ff0000;
+
+}
+
+.recipe-subtitle {
+    font-style: italic;
+}
+
+.recipe {
+    list-style-type: none;
+}
+
+.u-bold {
+    font-weight: bold;
+}
+
+.u-small {
+    font-size: 15px;
+}
+
+.u-underline {
+    text-decoration: underline;
+}
+
+.u-strike {
+    text-decoration: line-through;
+}
+
+.u-highlight {
+    background-color: #ffff00;
+}
+
+.recipe-divider {
+    height: 4px;
+    width: 33%;
+    margin: 20px auto;
+    background-color: #008000;
+    border: none;
+}
+
+.recipe-note {
+    font-style: italic;
+}
