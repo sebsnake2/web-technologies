@@ -1,0 +1,165 @@
+* {
+    box-sizing: border-box;
+}
+
+::placeholder {
+    color: #94a3c6;
+}
+
+:focus-visible {
+    outline: 2px solid #7aa8ff;
+    outline-offset: 2px;
+}
+
+html,
+body {
+    margin: 0;
+    background: #f4f8ff;
+    color: #1f2a44;
+    font-family: "Segoe UI", "Calibri", Arial, sans-serif;
+    line-height: 1.45;
+}
+
+.page-title {
+    margin: 24px 0;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 800;
+    color: #123a6f;
+}
+
+/* Контейнер форми */
+.form {
+    max-width: 860px;
+    margin: 0 auto 28px;
+    padding: 0 16px;
+}
+
+/* Панелі полів */
+.section {
+    padding: 16px 18px;
+    margin: 14px 0;
+    border: 0;
+    border-radius: 12px;
+    background-color: #eaf2ff;
+}
+
+.section__title {
+    padding: 8px 12px;
+    border-radius: 8px;
+    letter-spacing: 0.2px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #ffffff;
+    background-color: #1d4fa3;
+}
+
+.field {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    align-items: center;
+    gap: 12px;
+}
+.field textarea {
+    grid-column: 2;
+}
+
+/* Підписи та дрібні підзаголовки */
+label {
+    font-weight: 600;
+}
+
+.label-muted {
+    margin: 8px 0 6px;
+    font-weight: 600;
+    color: #2a3b66;
+}
+
+/* Групи чекбоксів/радіо */
+.choices {
+    margin: 6px 0 12px;
+    gap: 18px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="password"],
+input[list],
+textarea,
+select {
+    padding: 10px 12px;
+    min-width: 260px;
+    border: none;
+    border-radius: 10px;
+    outline: 2px solid transparent;
+    font-size: 15px;
+    font-family: inherit;
+    color: #11223d;
+    background-color: #ffffff;
+}
+
+textarea {
+    width: 100%;
+    max-width: 560px;
+    resize: vertical;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    background: #f7fbff;
+    outline-color: #7aa8ff;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    accent-color: #1d4fa3;
+}
+
+.actions {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.actions button {
+    margin: 6px 8px;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 700;
+    color: #ffffff;
+    background: #1d4fa3;
+}
+
+.actions button[type="reset"] {
+    background: #7a8aa6;
+}
+
+.actions button:hover {
+    background: #154083;
+}
+
+.actions button:active {
+    background: #0e2b5c;
+}
+
+.back {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.back a {
+    color: #1d4fa3;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.back a:hover {
+    text-decoration: underline;
+}

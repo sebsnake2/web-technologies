@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="uk">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Task3</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <h1 class="page-title">Анкета</h1>
+
+        <form class="form" action="#" method="get">
+            <!-- Блок 1 -->
+            <fieldset class="section">
+                <legend class="section__title">Основні дані</legend>
+
+                <p class="field">
+                    <label for="fname">Ім'я:</label>
+                    <input
+                        type="text"
+                        id="fname"
+                        name="first_name"
+                        placeholder="Ваше ім'я"
+                        required
+                        tabindex="1"
+                    />
+                </p>
+
+                <p class="field">
+                    <label for="lname">Прізвище:</label>
+                    <input
+                        type="text"
+                        id="lname"
+                        name="last_name"
+                        placeholder="Ваше прізвище"
+                        required
+                        tabindex="2"
+                    />
+                </p>
+
+                <p class="field">
+                    <label for="email">Email:</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="name@example.com"
+                        autocomplete="off"
+                        pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}"
+                        title="Формат: name@example.com"
+                        required
+                        tabindex="3"
+                    />
+                </p>
+
+                <p class="field">
+                    <label for="phone">Мобільний номер:</label>
+                    <input
+                        type="tel"
+                        id="phone"
+                        name="tel"
+                        placeholder="+380XXXXXXXXX"
+                        pattern="^\+?380\d{9}$"
+                        title="Формат для UA: +380XXXXXXXXX"
+                        required
+                        tabindex="4"
+                    />
+                </p>
+
+                <p class="field">
+                    <label for="birth">Дата народження:</label>
+                    <input
+                        type="date"
+                        id="birth"
+                        name="birth_date"
+                        required
+                        tabindex="5"
+                    />
+                </p>
+
+                <p class="field">
+                    <label for="pwd">Пароль (6 символів):</label>
+                    <input
+                        type="password"
+                        id="pwd"
+                        name="password"
+                        placeholder="******"
+                        pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[A-Za-z\d]{6}"
+                        title="6 символів: щонайменше 1 велика, 1 мала літери та 1 цифра"
+                        required
+                        tabindex="6"
+                    />
+                </p>
+
+                <p class="field">
+                    <label for="about">Коротко про себе:</label>
+                    <textarea
+                        id="about"
+                        name="about"
+                        rows="4"
+                        cols="40"
+                        placeholder="Коротко опишіть себе.."
+                        tabindex="7"
+                    ></textarea>
+                </p>
+            </fieldset>
+
+            <!-- Блок 2 -->
+            <fieldset class="section">
+                <legend class="section__title">Статус / переваги</legend>
+
+                <p class="label-muted">Улюблений режим доби:</p>
+                <p class="choices">
+                    <label
+                        ><input
+                            type="radio"
+                            name="daytime"
+                            value="morning"
+                            tabindex="8"
+                        />
+                        Ранок</label
+                    >
+                    <label
+                        ><input
+                            type="radio"
+                            name="daytime"
+                            value="noon"
+                            tabindex="9"
+                        />
+                        День</label
+                    >
+                    <label
+                        ><input
+                            type="radio"
+                            name="daytime"
+                            value="night"
+                            tabindex="10"
+                        />
+                        Ніч</label
+                    >
+                </p>
+
+                <p class="label-muted">Статус зайнятості (один варіант):</p>
+                <p class="choices">
+                    <label
+                        ><input
+                            type="radio"
+                            name="employment"
+                            value="student"
+                            tabindex="11"
+                        />
+                        Студент</label
+                    >
+                    <label
+                        ><input
+                            type="radio"
+                            name="employment"
+                            value="employed"
+                            tabindex="12"
+                        />
+                        Працюю</label
+                    >
+                    <label
+                        ><input
+                            type="radio"
+                            name="employment"
+                            value="other"
+                            tabindex="13"
+                        />
+                        Інше</label
+                    >
+                </p>
+            </fieldset>
+
+            <!-- Блок 3 -->
+            <fieldset class="section">
+                <legend class="section__title">Хобі (кілька варіантів)</legend>
+                <p class="choices">
+                    <label
+                        ><input
+                            type="checkbox"
+                            name="hobby"
+                            value="music"
+                            tabindex="14"
+                        />
+                        Музика</label
+                    >
+                    <label
+                        ><input
+                            type="checkbox"
+                            name="hobby"
+                            value="sport"
+                            tabindex="15"
+                        />
+                        Спорт</label
+                    >
+                    <label
+                        ><input
+                            type="checkbox"
+                            name="hobby"
+                            value="sim-racing"
+                            tabindex="16"
+                        />
+                        Сім-рейсинг</label
+                    >
+                    <label
+                        ><input
+                            type="checkbox"
+                            name="hobby"
+                            value="games"
+                            tabindex="17"
+                        />
+                        Ігри</label
+                    >
+                </p>
+            </fieldset>
+
+            <!-- Блок 4 -->
+            <fieldset class="section">
+                <legend class="section__title">Списки</legend>
+
+                <p class="field">
+                    <label for="city">Місто:</label>
+                    <select id="city" name="city" tabindex="18">
+                        <option value="chernivtsi" selected>Чернівці</option>
+                        <option value="lviv">Львів</option>
+                        <option value="kyiv">Київ</option>
+                        <option value="odessa">Одеса</option>
+                        <option value="khmelnitskyi">Хмельницький</option>
+                    </select>
+                </p>
+
+                <p class="field">
+                    <label for="skills">Навички (multiple):</label>
+                    <select
+                        id="skills"
+                        name="skills"
+                        multiple
+                        size="4"
+                        tabindex="19"
+                    >
+                        <option value="html">HTML</option>
+                        <option value="css">CSS</option>
+                        <option value="js">JavaScript</option>
+                        <option value="sql">SQL</option>
+                        <option value="git">Git</option>
+                        <option value="linux">Linux</option>
+                    </select>
+                </p>
+
+                <p class="field">
+                    <label for="dept">Факультет (з групами):</label>
+                    <select id="dept" name="department" tabindex="20">
+                        <optgroup label="Технічні">
+                            <option value="cs">Комп'ютерні науки</option>
+                            <option value="se">Програмна інженерія</option>
+                            <option value="it">IT</option>
+                        </optgroup>
+                        <optgroup label="Гуманітарні">
+                            <option value="phil">Філологія</option>
+                            <option value="hist">Історія</option>
+                            <option value="jur">Право</option>
+                        </optgroup>
+                        <optgroup label="Економічні">
+                            <option value="fin">Фінанси</option>
+                            <option value="acc">Облік</option>
+                            <option value="mkt">Маркетинг</option>
+                        </optgroup>
+                        <optgroup label="Природничі">
+                            <option value="chem">Хімія</option>
+                            <option value="phys">Фізика</option>
+                            <option value="bio">Біологія</option>
+                        </optgroup>
+                    </select>
+                </p>
+
+                <p class="field">
+                    <label for="browser"
+                        >Улюблений браузер (з підказками):</label
+                    >
+                    <input
+                        id="browser"
+                        name="browser"
+                        list="browsers"
+                        placeholder="Оберіть або введіть"
+                        tabindex="21"
+                    />
+                    <datalist id="browsers">
+                        <option value="Chrome"></option>
+                        <option value="Firefox"></option>
+                        <option value="Edge"></option>
+                        <option value="Safari"></option>
+                        <option value="Opera"></option>
+                    </datalist>
+                </p>
+            </fieldset>
+
+            <!-- Блок 5 -->
+            <fieldset class="section">
+                <legend class="section__title">Завантаження файлів</legend>
+                <p class="field">
+                    <label for="audios">Аудіо-файли (декілька):</label>
+                    <input
+                        id="audios"
+                        name="audios"
+                        type="file"
+                        accept="audio/*"
+                        multiple
+                        tabindex="22"
+                    />
+                </p>
+            </fieldset>
+
+            <div class="actions">
+                <button type="submit" formmethod="get" tabindex="23">
+                    Надіслати (GET)
+                </button>
+                <button
+                    type="submit"
+                    formmethod="post"
+                    formenctype="multipart/form-data"
+                    tabindex="24"
+                >
+                    Надіслати (POST multipart)
+                </button>
+                <button type="reset" tabindex="25">Очистити</button>
+            </div>
+        </form>
+
+        <p class="back"><a href="../index.html">Повернутись на головну</a></p>
+    </body>
+</html>
