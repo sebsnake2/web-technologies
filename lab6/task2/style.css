@@ -1,0 +1,156 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font: 16px/1.5 Arial, Helvetica, sans-serif;
+    color: #222222;
+    background: #f6f6f6;
+}
+
+.wrapper {
+    width: 1140px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #ffffff;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+header {
+    margin-bottom: 30px;
+}
+
+.logo {
+    float: left;
+}
+
+.logo img {
+    display: block;
+    height: 100px;
+    width: auto;
+}
+
+.topnav {
+    float: right;
+    margin-top: 32px;
+}
+
+.topnav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.topnav li {
+    float: left;
+    margin-left: 8px;
+}
+
+.topnav a {
+    display: block;
+    line-height: 36px;
+    padding: 0 14px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #82318b;
+    background: #d6770a;
+    border-radius: 3px;
+    transition: 0.2s;
+}
+
+.topnav a:hover {
+    background: #ffb361;
+    color: #5a005e;
+}
+
+main {
+    clear: both;
+    overflow: hidden;
+}
+
+.block {
+    float: left;
+    width: 330px;
+    height: 360px;
+    padding: 0px 20px 20px 20px;
+    margin: 15px;
+    text-align: justify;
+    background: #fff;
+}
+
+.block:nth-of-type(3n + 1) {
+    clear: both;
+}
+
+.block1 {
+    border: 10px solid #32cd32;
+    border-radius: 40px;
+}
+
+.block2 {
+    border: 10px solid #32cd32;
+    border-radius: 110px 0 110px 0;
+}
+
+.block3 {
+    border: 10px solid #32cd32;
+    border-radius: 60px 180px 70px 180px;
+}
+
+.block4 {
+    border-top: 25px solid #007b00;
+    border-bottom: 25px solid #007b00;
+    border-left: 25px solid #32cd32;
+    border-right: 25px solid #32cd32;
+    border-radius: 200px / 40px;
+}
+
+.block5 {
+    border-top: 25px solid #32cd32;
+    border-bottom: 25px solid #32cd32;
+    border-left: 25px solid #007b00;
+    border-right: 25px solid #007b00;
+    border-radius: 260px 40px 200px 30px / 80px 20px 80px 30px;
+}
+
+.block6 {
+    border: solid 25px;
+    border-color: #32cd32 #32cd32 #32cd32 #007b00;
+    border-bottom-right-radius: 100%;
+}
+
+.block7 {
+    border: 20px solid transparent;
+    border-image: url("../images/border7.png") 40 stretch;
+}
+
+.block8 {
+    border: 18px solid transparent;
+    border-image: url("../images/border8(2).png") 50 round;
+}
+
+.block9 {
+    border: 14px solid transparent;
+    border-image: url("../images/border9.png") 50 round;
+}
+
+.block10 {
+    border: 20px solid transparent;
+    border-image: url("../images/border10.png") 55 round;
+}
+
+.block11 {
+    border: 20px solid transparent;
+    border-image: url("../images/border11.png") 30 round;
+}
+
+.block12 {
+    border: 20px solid transparent;
+    border-image: url("../images/border12.png") 90 stretch;
+}

@@ -1,0 +1,189 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font: 16px/1.5 Arial, Helvetica, sans-serif;
+    color: #222222;
+    background: #f6f6f6;
+}
+
+.wrapper {
+    width: 1140px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #ffffff;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+header {
+    margin-bottom: 30px;
+}
+
+.logo {
+    float: left;
+}
+
+.logo img {
+    display: block;
+    height: 100px;
+    width: auto;
+}
+
+.topnav {
+    float: right;
+    margin-top: 32px;
+}
+
+.topnav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.topnav li {
+    float: left;
+    margin-left: 8px;
+}
+
+.topnav a {
+    display: block;
+    line-height: 36px;
+    padding: 0 14px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #82318b;
+    background: #d6770a;
+    border-radius: 3px;
+    transition: 0.2s;
+}
+
+.topnav a:hover {
+    background: #ffb361;
+    color: #5a005e;
+}
+
+.info-card {
+    float: left;
+    width: 300px;
+    height: 400px;
+    margin: 0 40px 40px 0;
+    text-align: center;
+    padding: 16px 18px;
+    border-radius: 6px;
+    color: #111;
+    overflow: hidden;
+}
+
+.photo-round {
+    display: block;
+    width: 200px;
+    height: 200px;
+    margin: 8px auto 10px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.card-title {
+    margin: 6px 0 8px;
+    font-weight: 700;
+    font-size: 20px;
+}
+.card-text {
+    margin: 0 auto 20px auto;
+    width: 85%;
+    line-height: 1.2;
+    font-size: 14px;
+}
+
+.grad-1 {
+    background: linear-gradient(
+        230deg,
+        #ff991d 2%,
+        #53009b 18%,
+        #0000ff 40%,
+        #ffe13b 65%,
+        #2f8f2f 90%
+    );
+}
+
+.grad-2 {
+    background: linear-gradient(
+            45deg,
+            #009a00 18%,
+            transparent 25%,
+            transparent 25%,
+            transparent 75%,
+            #f49e00 75%,
+            #002aff 100%
+        ),
+        linear-gradient(
+            45deg,
+            #ffff00 18%,
+            transparent 25%,
+            transparent 25%,
+            transparent 75%,
+            #860086 75%,
+            #ffa500 100%
+        );
+    background-size: 100px 100px;
+    background-position: 0 0, 50px 50px;
+}
+
+.grad-3 {
+    background: repeating-linear-gradient(
+        to right,
+        /* 1 */ #008000 0%,
+        #008000 8%,
+        #ffffff 25%,
+
+        /* 2 */ #0000ff 25%,
+        #0000ff 33%,
+        #ffff00 50%,
+
+        /* 3 */ #008000 50%,
+        #008000 58%,
+        #ffffff 75%,
+
+        /* 4 */ #0000ff 75%,
+        #0000ff 84%,
+        #ffff00 100%
+    );
+    background-size: 200px 100%;
+}
+
+.grad-4 {
+    background: linear-gradient(
+            to left top,
+            yellow 35%,
+            transparent 20%,
+            transparent 100%
+        ),
+        linear-gradient(
+            to right top,
+            green 25%,
+            transparent 10%,
+            transparent 100%
+        ),
+        linear-gradient(
+            to right bottom,
+            orange 26%,
+            transparent 50%,
+            transparent 100%
+        ),
+        linear-gradient(
+            to left bottom,
+            blue 26%,
+            transparent 50%,
+            transparent 100%
+        );
+}
+
+.grad-5 {
+}
