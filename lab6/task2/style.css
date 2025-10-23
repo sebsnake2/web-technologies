@@ -81,7 +81,7 @@ main {
     padding: 0px 20px 20px 20px;
     margin: 15px;
     text-align: justify;
-    background: #fff;
+    background: #ffffff;
 }
 
 .block:nth-of-type(3n + 1) {
