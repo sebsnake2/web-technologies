@@ -1,0 +1,315 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f2f2f2;
+
+    padding-left: 200px;
+    color: #000;
+}
+
+.content {
+    margin-top: 80px; /* щоб не лізло під верхнє меню */
+    padding: 20px;
+}
+
+.side-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 200px;
+    background: #0066cc;
+    border-right: 2px solid #004c99;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    overflow: visible;
+    z-index: 2000;
+
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 1.2;
+}
+
+/* Перший рівень */
+
+.side-nav > li {
+    position: relative;
+    border-bottom: 1px solid #004c99;
+}
+
+.side-nav > li:last-child {
+    border-bottom: none;
+}
+
+.side-nav > li > a {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 12px 16px;
+    background: #0066cc;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.side-nav > li > a .icon {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px; /* те саме що gap:8px було */
+}
+
+.side-nav > li > a .label {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.side-nav > li.active > a {
+    background: #004b99;
+}
+
+.side-nav > li > a:hover {
+    background: #004c99;
+}
+
+/* Другий рівень */
+
+.sub-menu.level-2 {
+    display: none;
+    list-style: none;
+    margin: 0;
+    padding: 6px 0 6px 0;
+    background: #005bbf;
+    border-top: 1px solid #004c99;
+    position: relative;
+    z-index: 2000;
+}
+
+.side-nav > li.has-sub:hover > .sub-menu.level-2 {
+    display: block;
+}
+
+.sub-menu.level-2 > li {
+    position: relative;
+    border-bottom: 1px solid #004c99;
+}
+
+.sub-menu.level-2 > li:last-child {
+    border-bottom: none;
+}
+
+.sub-menu.level-2 > li > a {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    background: #005bbf;
+    font-size: 13px;
+    line-height: 1.4;
+    padding: 10px 16px 10px 32px;
+    white-space: nowrap;
+}
+
+.sub-menu.level-2 > li > a:hover {
+    background: #004c99;
+}
+
+/* Третій рівень */
+
+.sub-menu.level-2 > li.has-flyout {
+    position: relative;
+}
+
+.sub-menu.level-2 > li.has-flyout > a {
+    position: relative;
+    display: block;
+    padding-right: 20px;
+    cursor: default;
+}
+
+.sub-menu.level-2 > li.has-flyout > a::after {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 13px;
+    line-height: 1;
+    color: #ffffff;
+}
+
+.flyout.level-3 {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 195px;
+    min-width: 180px;
+
+    list-style: none;
+    margin: 0;
+    padding: 6px 0;
+
+    background: #004c99;
+    border: 1px solid #003a73;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.45);
+    z-index: 9999; /* поверх усього */
+}
+
+.sub-menu.level-2 > li.has-flyout:hover > .flyout.level-3,
+.sub-menu.level-2 > li.has-flyout > .flyout.level-3:hover {
+    display: block;
+}
+
+.flyout.level-3 > li {
+    border-bottom: 1px solid #003a73;
+}
+
+.flyout.level-3 > li:last-child {
+    border-bottom: none;
+}
+
+.flyout.level-3 > li > a {
+    display: block;
+    background: #004c99;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 13px;
+    line-height: 1.4;
+    padding: 10px 14px;
+    white-space: nowrap;
+}
+
+.flyout.level-3 > li > a:hover {
+    background: #003a73;
+}
+
+.top-nav {
+    position: fixed;
+    top: 0;
+    left: 200px;
+    right: 0;
+    height: 50px;
+
+    background: #3a3a3a linear-gradient(#4a4a4a, #2f2f2f);
+    border-bottom: 2px solid #1a1a1a;
+
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    z-index: 1000;
+    font-size: 0;
+}
+
+/* Перший рівень у шапці */
+.top-nav > li {
+    float: left;
+    position: relative;
+    font-size: 14px;
+    min-width: 48px;
+    text-align: center;
+}
+
+.top-nav > li.right {
+    float: right;
+}
+
+.top-nav > li > a {
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 20px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.top-nav > li.active > a {
+    background: #2e9e37;
+}
+
+.top-nav > li > a:hover {
+    background: #1f1f1f;
+}
+.top-nav > li.active > a:hover {
+    background: #2e9e37;
+}
+
+/* Другий рівень (dropdown) */
+.top-nav li ul {
+    position: absolute;
+    top: 50px;
+    left: 0;
+
+    display: none;
+    list-style: none;
+    margin: 0;
+    padding: 8px 0;
+
+    min-width: 180px;
+    background: #4a4a4a;
+    border: 1px solid #1a1a1a;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+
+    z-index: 2000;
+}
+
+.top-nav > li.right > ul {
+    left: auto;
+    right: 0;
+}
+
+.top-nav li:hover > ul {
+    display: block;
+}
+
+.top-nav li ul > li {
+    position: relative;
+}
+
+.top-nav li ul > li > a {
+    display: block;
+    background: transparent;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 13px;
+    line-height: 1.4;
+    padding: 10px 14px;
+    white-space: nowrap;
+}
+
+.top-nav li ul > li > a:hover {
+    background: #2e9e37;
+    color: #ffffff;
+}
+
+/* Третій рівень */
+.top-nav li ul li ul {
+    top: 0;
+    left: 100%;
+    margin-left: 2px;
+    min-width: 200px;
+    border: 1px solid #1a1a1a;
+    background: #4a4a4a;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    padding: 8px 0;
+    display: none;
+}
+
+.top-nav li ul li:hover > ul {
+    display: block;
+}
+
+.top-nav li ul li ul a {
+    padding: 10px 14px;
+    font-size: 13px;
+    line-height: 1.4;
+    background: transparent;
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+    white-space: nowrap;
+}
+
+.top-nav li ul li ul a:hover {
+    background: #2e9e37;
+    color: #ffffff;
+}
