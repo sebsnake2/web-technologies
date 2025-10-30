@@ -17,30 +17,30 @@ div {
     text-align: justify;
 }
 
-.is-highlighted {
+.important {
     color: #ff0000;
 }
 
-.u-nowrap {
+.nowrap {
     white-space: nowrap;
 }
 
-#second-paragraph {
+.lead {
     font-style: italic;
     font-weight: bold;
 }
 
-.is-shadowed {
+.elevated {
     text-shadow: 5px -5px 3px #0000ff;
 }
 
-.text-emph {
+.emphasis {
     text-decoration: line-through;
     text-transform: uppercase;
     text-indent: 50px;
 }
 
-.text-spaced {
+.expanded {
     letter-spacing: 30px;
     word-spacing: 50px;
 }

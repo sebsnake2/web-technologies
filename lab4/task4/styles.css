@@ -36,7 +36,7 @@ div.bold > p {
 }
 
 div.bold > section > p {
-  line-height: 45px;
+    line-height: 45px;
 }
 
 img + p {
@@ -44,5 +44,5 @@ img + p {
 }
 
 section ~ p {
-    color: #ff0000
+    color: #ff0000;
 }

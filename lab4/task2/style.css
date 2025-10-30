@@ -4,14 +4,13 @@
 
 .recipe-title {
     color: #ff0000;
-
 }
 
 .recipe-subtitle {
     font-style: italic;
 }
 
-.recipe {
+.recipe-list {
     list-style-type: none;
 }
 

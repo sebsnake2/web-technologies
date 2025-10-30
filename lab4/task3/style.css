@@ -6,32 +6,28 @@
     color: #008000;
 }
 
-.submenu-berries {
+.submenu {
+    list-style: none;
+}
+
+.submenu--berries {
     list-style-type: square;
 }
 
-.submenu-veggies {
-    list-style-type: none;
+.submenu-item--potato {
+    list-style-image: url(../icons/potato-logo.png);
 }
 
-.submenu-item-potato {
-  list-style-image: url(../icons/potato-logo.png);
+.submenu-item--cucumber {
+    list-style-image: url(../icons/cucumber-logo.png);
 }
 
-.submenu-item-cucumber {
-  list-style-image: url(../icons/cucumber-logo.png);
-}
-
-.submenu-item-beet {
+.submenu-item--beet {
     list-style-image: url(../icons/beet-logo.png);
 }
 
-nav ul ul {
-    list-style-type: none;
-}
-
-.submenu-berries a {
-    text-decoration: none;
+.special > .menu-link {
+    color: #000000;
 }
 
 ol {
