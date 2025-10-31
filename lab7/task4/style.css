@@ -25,7 +25,7 @@ body {
     list-style: none;
 
     overflow: visible;
-    z-index: 2000;
+    z-index: 2;
 
     font-family: Arial, sans-serif;
     color: #ffffff;
@@ -54,17 +54,6 @@ body {
     white-space: nowrap;
 }
 
-.side-nav > li > a .icon {
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: 8px; /* те саме що gap:8px було */
-}
-
-.side-nav > li > a .label {
-    display: inline-block;
-    vertical-align: middle;
-}
-
 .side-nav > li.active > a {
     background: #004b99;
 }
@@ -83,7 +72,7 @@ body {
     background: #005bbf;
     border-top: 1px solid #004c99;
     position: relative;
-    z-index: 2000;
+    z-index: 2;
 }
 
 .side-nav > li.has-sub:hover > .sub-menu.level-2 {
@@ -151,7 +140,7 @@ body {
     background: #004c99;
     border: 1px solid #003a73;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.45);
-    z-index: 9999; /* поверх усього */
+    z-index: 9; /* поверх усього */
 }
 
 .sub-menu.level-2 > li.has-flyout:hover > .flyout.level-3,
@@ -195,7 +184,7 @@ body {
     margin: 0;
     padding: 0;
     list-style: none;
-    z-index: 1000;
+    z-index: 1;
     font-size: 0;
 }
 
@@ -249,7 +238,7 @@ body {
     border: 1px solid #1a1a1a;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
 
-    z-index: 2000;
+    z-index: 2;
 }
 
 .top-nav > li.right > ul {

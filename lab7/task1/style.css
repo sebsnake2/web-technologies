@@ -16,17 +16,17 @@ body {
     text-align: center;
 }
 
-.block-left {
+.block--left {
     top: 100px;
     left: 250px;
 }
 
-.block-right {
+.block--right {
     top: 100px;
     left: 520px;
 }
 
-.block-overlay {
+.block--overlay {
     width: 320px;
     height: 70px;
     background-color: rgba(0, 100, 255, 0.6);
