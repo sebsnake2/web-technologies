@@ -106,8 +106,10 @@ button,
 input {
     line-height: normal;
 }
-button,html input[type=button],/* 1 */
-input[type=reset],input[type=submit] {
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
     -webkit-appearance: button;
     cursor: pointer;
 }
@@ -149,14 +151,12 @@ input::-moz-focus-inner {
     padding: 0;
 }
 
-/* Box-sizing border-box */
 * {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
-/* Some default styles to make each box visible */
 .box {
     color: white;
     font-size: 100px;
@@ -165,7 +165,6 @@ input::-moz-focus-inner {
     padding: 10px;
 }
 
-/* Colours for each box */
 .box1 {
     background: #1abc9c;
 }
@@ -197,7 +196,6 @@ input::-moz-focus-inner {
     background: #16a085;
 }
 
-/* We start writing out flexbox here. The above is just page setup */
 .container {
     display: flex;
     border: 10px solid goldenrod;

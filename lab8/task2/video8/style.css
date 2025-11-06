@@ -149,7 +149,6 @@ input::-moz-focus-inner {
     padding: 0;
 }
 
-/* Box-sizing border-box */
 * {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;

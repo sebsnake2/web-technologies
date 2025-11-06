@@ -39,8 +39,6 @@ a:hover {
 }
 
 /* Flex Box Starts Here! */
-
-/* Flex Container */
 .flex-nav ul {
     border: 1px solid black;
     list-style: none;
@@ -49,7 +47,6 @@ a:hover {
     display: flex;
 }
 
-/* Flex Item */
 .flex-nav li {
     flex: 3;
 }

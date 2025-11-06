@@ -60,7 +60,6 @@ footer {
     font-weight: 100;
 }
 
-/* Flex Container */
 .flex-nav ul {
     border: 1px solid black;
     list-style: none;
@@ -69,7 +68,6 @@ footer {
     display: flex;
 }
 
-/* Flex Item */
 .flex-nav li {
     flex: 3;
 }
