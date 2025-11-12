@@ -1,3 +1,14 @@
+:root {
+    --accent: #f05454;
+    --accent-dark: #c73f3f;
+    --accent-darker: #a83232;
+    --bg-light: #f8f8f8;
+    --text-dark: #333333;
+    --radius: 3px;
+    --dark-bg: #2a3035;
+    --nav-bg: #111111;
+}
+
 *,
 *::before,
 *::after {
@@ -5,6 +16,7 @@
 }
 
 body {
+    margin: 0;
     font-family: "Roboto Condensed", "Arial Narrow", Arial, sans-serif;
     font-weight: 400;
     letter-spacing: 0.3px;
@@ -31,7 +43,7 @@ a {
 }
 
 a:active {
-    color: #f05454;
+    color: var(--accent);
 }
 
 .container {
@@ -73,7 +85,7 @@ a:active {
     top: 60px;
     right: 0;
     width: 220px;
-    background: #111111;
+    background: var(--nav-bg);
     transform: translateX(100%);
 }
 
@@ -99,7 +111,6 @@ a:active {
     background: #f05454;
 }
 
-/* ховаємо checkbox */
 .menu-toggle {
     display: none;
 }
@@ -137,13 +148,17 @@ a:active {
     top: 10px;
 }
 
+.burger:active {
+    opacity: 0.7;
+}
+
 /* меню спочатку сховане */
 .main-nav {
     position: absolute;
     top: 60px;
     right: 0;
     width: 220px;
-    background: #111111;
+    background: var(--nav-bg);
     transform: translateX(100%);
 }
 
@@ -204,37 +219,37 @@ a:active {
 }
 
 .btn-outline {
-    border: 1px solid #f05454;
-    color: #f05454;
+    border: 1px solid var(--accent);
+    color: var(--accent);
     padding: 0.5rem 1rem;
     border-radius: 3px;
 }
 
 .btn-outline:hover,
 .btn-outline:focus {
-    background: #f05454;
+    background: var(--accent);
     color: #ffffff;
 }
 
 .btn-outline:active {
-    background: #c73f3f;
+    background: var(--accent-dark);
 }
 
 .btn-primary {
-    background: #f05454;
+    background: var(--accent);
     color: #ffffff;
     padding: 0.7rem 1.5rem;
-    border-radius: 3px;
+    border-radius: var(--radius);
     display: inline-block;
 }
 
 .btn-primary:hover,
 .btn-primary:focus {
-    background: #c73f3f;
+    background: var(--accent-dark);
 }
 
 .btn-primary:active {
-    background: #a83232;
+    background: var(--accent-darker);
 }
 
 /* WORKS */
@@ -267,17 +282,17 @@ a:active {
 
 .profile-card:hover,
 .profile-card:focus-within {
-    background: #2a3035;
+    background: var(--dark-bg);
     border-color: transparent;
 }
 
 /* карта-профіль у сітці works */
 .profile-card {
     position: relative;
-    background: #2a3035
-        url("../task5/images/blue-purple-marble-background_53876-104406.avif")
+    background: var(--dark-bg)
+        url("../task4+5/images/blue-purple-marble-background_53876-104406.avif")
         center/cover no-repeat;
-    color: #fff;
+    color: #ffffff;
     height: 300px;
     display: flex;
     flex-direction: column;
@@ -294,7 +309,7 @@ a:active {
     border-radius: 50%;
     border: 3px solid rgba(255, 255, 255, 0.6);
     overflow: hidden;
-    background: #fff;
+    background: #ffffff;
 }
 
 .profile-avatar img {
@@ -317,8 +332,8 @@ a:active {
 
 .profile-card:hover,
 .profile-card:focus-within {
-    background: #2a3035
-        url("../task5/images/blue-purple-marble-background_53876-104406.avif")
+    background: var(--dark-bg)
+        url("../task4+5/images/blue-purple-marble-background_53876-104406.avif")
         center/cover no-repeat;
     border-color: transparent;
 }
@@ -341,6 +356,10 @@ a:active {
     cursor: pointer;
 }
 
+.btn-ghost:active {
+    background: rgba(255, 255, 255, 0.25);
+}
+
 .btn-ghost:hover,
 .btn-ghost:focus {
     background: rgba(255, 255, 255, 0.1);
@@ -348,7 +367,7 @@ a:active {
 
 /* CTA */
 .cta {
-    background: #f8f8f8;
+    background: var(--bg-light);
     text-align: center;
     padding: 2.2rem 0;
 }
@@ -483,9 +502,23 @@ a:active {
     transition: opacity 0.2s ease;
 }
 
+.social a:active img {
+    opacity: 0.5;
+}
+
 .social a:hover img,
 .social a:focus img {
     opacity: 0.7;
+}
+
+/* Accessibility: клавіатурна навігація */
+.btn-primary:focus-visible,
+.btn-outline:focus-visible,
+.btn-ghost:focus-visible,
+.nav-link:focus-visible,
+.burger:focus-visible {
+    outline: 2px dashed var(--accent);
+    outline-offset: 2px;
 }
 
 /*
@@ -526,16 +559,16 @@ a:active {
 
     .nav-link,
     .btn-small {
-        color: #333333;
+        color: var(--text-dark);
         background: transparent;
     }
 
     .nav-link:hover,
     .nav-link:focus,
     .nav-link:active {
-        background: #f05454;
+        background: var(--accent);
         color: #ffffff;
-        border-radius: 3px;
+        border-radius: var(--radius);
     }
 
     /* works: 3 в ряд */
