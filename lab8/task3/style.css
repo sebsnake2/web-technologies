@@ -1,6 +1,11 @@
+:root {
+    --bg: #f5f5f5;
+    --card-bg: #ffffff;
+}
+
 * {
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: "Roboto", Arial, sans-serif;
 }
 
 body {
@@ -8,14 +13,14 @@ body {
     justify-content: center; /* горизонталь */
     align-items: center; /* вертикаль */
     min-height: 100vh; /* щоб займати всю висоту екрана */
-    background: #f5f5f5;
+    background: var(--bg);
     margin: 0;
 }
 
 .weather-widget {
     width: 420px;
     max-width: 500px;
-    background: #ffffff;
+    background: var(--card-bg);
     border-radius: 4px;
     overflow: hidden;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
