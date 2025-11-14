@@ -114,7 +114,6 @@ a:active {
   display: none;
 }
 
-/* бургер кнопка */
 .burger {
   display: block;
   width: 38px;
@@ -161,7 +160,7 @@ a:active {
   transform: translateX(100%);
 }
 
-/* якщо чекбокс активний — показуємо меню */
+/* якщо чекбокс активний показуємо меню */
 .menu-toggle:checked ~ .main-nav {
   transform: translateX(0);
 }

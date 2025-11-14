@@ -12,7 +12,7 @@ body {
     display: flex;
     justify-content: center; /* горизонталь */
     align-items: center; /* вертикаль */
-    min-height: 100vh; /* щоб займати всю висоту екрана */
+    min-height: 100vh;
     background: var(--bg);
     margin: 0;
 }

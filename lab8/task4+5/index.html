@@ -1,307 +1,246 @@
 <!DOCTYPE html>
 <html lang="uk">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Keepsake layout</title>
-        <link
-            rel="stylesheet"
-            href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
-        />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;600;700&display=swap"
-            rel="stylesheet"
-        />
-        <link rel="stylesheet" href="style.css" />
-    </head>
-    <body>
-        <!-- HEADER -->
-        <header class="site-header">
-            <div class="container header-inner">
-                <a href="#" class="logo">Keepsake</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Keepsake layout</title>
+    <link
+      rel="stylesheet"
+      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="#" class="logo">Keepsake</a>
 
-                <!-- бургер через checkbox -->
-                <input type="checkbox" id="menu-toggle" class="menu-toggle" />
-                <label
-                    for="menu-toggle"
-                    class="burger"
-                    aria-label="Відкрити меню"
-                >
-                    <span class="burger-line"></span>
-                </label>
+        <!-- бургер через checkbox -->
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+        <label for="menu-toggle" class="burger" aria-label="Відкрити меню">
+          <span class="burger-line"></span>
+        </label>
 
-                <nav class="main-nav">
-                    <ul class="nav-list">
-                        <li><a href="#home" class="nav-link">Home</a></li>
-                        <li><a href="#about" class="nav-link">About us</a></li>
-                        <li><a href="#works" class="nav-link">Our works</a></li>
-                        <li><a href="#journal" class="nav-link">Journal</a></li>
-                        <li>
-                            <a href="#contact" class="nav-link btn-small"
-                                >Contact</a
-                            >
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
+        <nav class="main-nav">
+          <ul class="nav-list">
+            <li><a href="#home" class="nav-link">Home</a></li>
+            <li><a href="#about" class="nav-link">About us</a></li>
+            <li><a href="#works" class="nav-link">Our works</a></li>
+            <li><a href="#journal" class="nav-link">Journal</a></li>
+            <li>
+              <a href="#contact" class="nav-link btn-small">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-        <main>
-            <div class="header-spacer" id="home"></div>
+    <main>
+      <div class="header-spacer" id="home"></div>
 
-            <!-- HERO / INTRO -->
-            <section class="hero" id="about">
-                <div class="container">
-                    <h1>We’re Keepsake, a digital &amp; branding agency</h1>
-                    <p>
-                        Specializing in web design, poster, motion video, based
-                        in London. We love to turn ideas into beautiful things.
-                    </p>
-                </div>
-            </section>
+      <!-- HERO / INTRO -->
+      <section class="hero" id="about">
+        <div class="container">
+          <h1>We're Keepsake, a digital &amp; branding agency</h1>
+          <p>
+            Specializing in web design, poster, motion video, based in London.
+            We love to turn ideas into beautiful things.
+          </p>
+        </div>
+      </section>
 
-            <!-- OUR AWESOME WORKS -->
-            <section class="section works" id="works">
-                <div class="container">
-                    <header class="section-header">
-                        <h2>Our awesome works</h2>
-                        <a href="#" class="btn-outline">Filter portfolio</a>
-                    </header>
+      <!-- OUR AWESOME WORKS -->
+      <section class="section works" id="works">
+        <div class="container">
+          <header class="section-header">
+            <h2>Our awesome works</h2>
+            <a href="#" class="btn-outline">Filter portfolio</a>
+          </header>
 
-                    <div class="works-grid">
-                        <!-- 1 -->
-                        <article class="work-card">
-                            <img
-                                src="./images/Tag mockup.jpeg"
-                                alt="Tag mockup"
-                            />
-                        </article>
-                        <!-- 2 -->
-                        <article class="work-card">
-                            <img
-                                src="./images/Logo mockup.jpg"
-                                alt="Logo mockup"
-                            />
-                        </article>
-                        <!-- 3 -->
-                        <article class="work-card">
-                            <img src="./images/CD cover.jpg" alt="CD cover" />
-                        </article>
-                        <!-- 4 -->
-                        <article class="work-card">
-                            <img src="./images/Packaging.jpg" alt="Packaging" />
-                        </article>
-                        <!-- 5 -->
-                        <article class="work-card profile-card">
-                            <div class="profile-avatar">
-                                <img
-                                    src="./images/profile-avatar.avif"
-                                    alt="Amanda Seyfried"
-                                />
-                            </div>
-                            <h3 class="profile-name">AMANDA SEYFRIED</h3>
-                            <p class="profile-handle">@contactaddress</p>
-                            <div class="profile-actions">
-                                <button class="btn-ghost">Share</button>
-                                <button class="btn-ghost">Follow</button>
-                            </div>
-                        </article>
+          <div class="works-grid">
+            <!-- 1 -->
+            <article class="work-card">
+              <img src="./images/Tag mockup.jpeg" alt="Tag mockup" />
+            </article>
+            <!-- 2 -->
+            <article class="work-card">
+              <img src="./images/Logo mockup.jpg" alt="Logo mockup" />
+            </article>
+            <!-- 3 -->
+            <article class="work-card">
+              <img src="./images/CD cover.jpg" alt="CD cover" />
+            </article>
+            <!-- 4 -->
+            <article class="work-card">
+              <img src="./images/Packaging.jpg" alt="Packaging" />
+            </article>
+            <!-- 5 -->
+            <article class="work-card profile-card">
+              <div class="profile-avatar">
+                <img src="./images/profile-avatar.avif" alt="Amanda Seyfried" />
+              </div>
+              <h3 class="profile-name">AMANDA SEYFRIED</h3>
+              <p class="profile-handle">@contactaddress</p>
+              <div class="profile-actions">
+                <button class="btn-ghost">Share</button>
+                <button class="btn-ghost">Follow</button>
+              </div>
+            </article>
 
-                        <!-- 6 -->
-                        <article class="work-card">
-                            <img src="./images/Brochure.jpg" alt="Brochure" />
-                        </article>
-                        <!-- 7 -->
-                        <article class="work-card">
-                            <img src="./images/Wall logo.jpg" alt="Wall logo" />
-                        </article>
-                        <!-- 8 -->
-                        <article class="work-card">
-                            <img
-                                src="./images/Business card.webp"
-                                alt="Business card"
-                            />
-                        </article>
-                        <!-- 9 -->
-                        <article class="work-card">
-                            <img
-                                src="./images/Fabric logo.avif"
-                                alt="Fabric logo"
-                            />
-                        </article>
-                    </div>
-                </div>
-            </section>
+            <!-- 6 -->
+            <article class="work-card">
+              <img src="./images/Brochure.jpg" alt="Brochure" />
+            </article>
+            <!-- 7 -->
+            <article class="work-card">
+              <img src="./images/Wall logo.jpg" alt="Wall logo" />
+            </article>
+            <!-- 8 -->
+            <article class="work-card">
+              <img src="./images/Business card.webp" alt="Business card" />
+            </article>
+            <!-- 9 -->
+            <article class="work-card">
+              <img src="./images/Fabric logo.avif" alt="Fabric logo" />
+            </article>
+          </div>
+        </div>
+      </section>
 
-            <!-- CTA -->
-            <section class="cta">
-                <div class="container">
-                    <p>Would you love to work with us?</p>
-                    <a href="#contact" class="btn-primary">Contact us</a>
-                </div>
-            </section>
+      <!-- CTA -->
+      <section class="cta">
+        <div class="container">
+          <p>Would you love to work with us?</p>
+          <a href="#contact" class="btn-primary">Contact us</a>
+        </div>
+      </section>
 
-            <!-- WHAT DO WE DO -->
-            <section class="section services" id="services">
-                <div class="container">
-                    <header class="section-header">
-                        <h2>What do we do</h2>
-                    </header>
-                    <div class="services-grid">
-                        <article class="service-card">
-                            <div class="service-icon">🖥</div>
-                            <h3>Web design</h3>
-                            <p class="text-box">
-                                Donec elit non mi porta gravida eget metus.
-                                Mauris non magna. Maecenas vel leo quam.
-                                Pellentesque ornare sem porta.
-                            </p>
-                        </article>
-                        <article class="service-card">
-                            <div class="service-icon">🎬</div>
-                            <h3>Motion video</h3>
-                            <p class="text-box">
-                                Aenean lacinia bibendum nulla sed consectetur.
-                                Sed posuere consectetur est at lobortis.
-                            </p>
-                        </article>
-                        <article class="service-card">
-                            <div class="service-icon">🖨</div>
-                            <h3>Print design</h3>
-                            <p class="text-box">
-                                Maecenas sed diam eget risus varius blandit sit
-                                amet non magna. Nullam id dolor id nibh
-                                ultricies.
-                            </p>
-                        </article>
-                        <article class="service-card">
-                            <div class="service-icon">❤️</div>
-                            <h3>Illustration</h3>
-                            <p class="text-box">
-                                Cum sociis natoque penatibus et magnis dis
-                                parturient montes, nascetur ridiculus mus.
-                            </p>
-                        </article>
-                    </div>
-                </div>
-            </section>
+      <!-- WHAT DO WE DO -->
+      <section class="section services" id="services">
+        <div class="container">
+          <header class="section-header">
+            <h2>What do we do</h2>
+          </header>
+          <div class="services-grid">
+            <article class="service-card">
+              <div class="service-icon">🖥</div>
+              <h3>Web design</h3>
+              <p class="text-box">
+                Donec elit non mi porta gravida eget metus. Mauris non magna.
+                Maecenas vel leo quam. Pellentesque ornare sem porta.
+              </p>
+            </article>
+            <article class="service-card">
+              <div class="service-icon">🎬</div>
+              <h3>Motion video</h3>
+              <p class="text-box">
+                Aenean lacinia bibendum nulla sed consectetur. Sed posuere
+                consectetur est at lobortis.
+              </p>
+            </article>
+            <article class="service-card">
+              <div class="service-icon">🖨</div>
+              <h3>Print design</h3>
+              <p class="text-box">
+                Maecenas sed diam eget risus varius blandit sit amet non magna.
+                Nullam id dolor id nibh ultricies.
+              </p>
+            </article>
+            <article class="service-card">
+              <div class="service-icon">❤️</div>
+              <h3>Illustration</h3>
+              <p class="text-box">
+                Cum sociis natoque penatibus et magnis dis parturient montes,
+                nascetur ridiculus mus.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
 
-            <!-- FROM THE JOURNAL -->
-            <section class="section journal" id="journal">
-                <div class="container">
-                    <header class="section-header">
-                        <h2>From the journal</h2>
-                    </header>
-                    <div class="journal-grid">
-                        <article class="journal-card">
-                            <img
-                                src="./images/Article 1.webp"
-                                alt="Article 1"
-                            />
-                            <div class="journal-body">
-                                <p class="journal-meta">
-                                    Oct 13, 2014 / Identity
-                                </p>
-                                <h3 class="journal-title">
-                                    Sollicitudin tortor inceptos
-                                </h3>
-                                <p class="journal-text text-box">
-                                    Maecenas faucibus mollis interdum. Cum
-                                    sociis natoque penatibus et magnis dis
-                                    parturient montes, nascetur ridiculus mus.
-                                </p>
-                            </div>
-                        </article>
-                        <article class="journal-card">
-                            <img
-                                src="./images/Article 2.webp"
-                                alt="Article 2"
-                            />
-                            <div class="journal-body">
-                                <p class="journal-meta">
-                                    Oct 23, 2014 / Branding
-                                </p>
-                                <h3 class="journal-title">
-                                    Amet inceptos fringilla fusce
-                                </h3>
-                                <p class="journal-text text-box">
-                                    Donec ullamcorper nulla non metus auctor
-                                    fringilla. Nullam id dolor id nibh ultricies
-                                    vehicula ut id elit.
-                                </p>
-                            </div>
-                        </article>
-                        <article class="journal-card">
-                            <img
-                                src="./images/Article 3.jpeg"
-                                alt="Article 3"
-                            />
-                            <div class="journal-body">
-                                <p class="journal-meta">
-                                    Sep 19, 2014 / Identity
-                                </p>
-                                <h3 class="journal-title">
-                                    Cursus malesuada justo
-                                </h3>
-                                <p class="journal-text text-box">
-                                    Maecenas faucibus mollis interdum. Cum
-                                    sociis natoque penatibus et magnis dis
-                                    parturient montes.
-                                </p>
-                            </div>
-                        </article>
-                        <article class="journal-card">
-                            <img
-                                src="./images/Article 4.avif"
-                                alt="Article 4"
-                            />
-                            <div class="journal-body">
-                                <p class="journal-meta">
-                                    Sep 27, 2014 / Branding
-                                </p>
-                                <h3 class="journal-title">
-                                    Ornare cursus bibendum purus
-                                </h3>
-                                <p class="journal-text text-box">
-                                    Maecenas faucibus mollis interdum. Nullam id
-                                    dolor id nibh ultricies vehicula.
-                                </p>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-            </section>
+      <!-- FROM THE JOURNAL -->
+      <section class="section journal" id="journal">
+        <div class="container">
+          <header class="section-header">
+            <h2>From the journal</h2>
+          </header>
+          <div class="journal-grid">
+            <article class="journal-card">
+              <img src="./images/Article 1.webp" alt="Article 1" />
+              <div class="journal-body">
+                <p class="journal-meta">Oct 13, 2014 / Identity</p>
+                <h3 class="journal-title">Sollicitudin tortor inceptos</h3>
+                <p class="journal-text text-box">
+                  Maecenas faucibus mollis interdum. Cum sociis natoque
+                  penatibus et magnis dis parturient montes, nascetur ridiculus
+                  mus.
+                </p>
+              </div>
+            </article>
+            <article class="journal-card">
+              <img src="./images/Article 2.webp" alt="Article 2" />
+              <div class="journal-body">
+                <p class="journal-meta">Oct 23, 2014 / Branding</p>
+                <h3 class="journal-title">Amet inceptos fringilla fusce</h3>
+                <p class="journal-text text-box">
+                  Donec ullamcorper nulla non metus auctor fringilla. Nullam id
+                  dolor id nibh ultricies vehicula ut id elit.
+                </p>
+              </div>
+            </article>
+            <article class="journal-card">
+              <img src="./images/Article 3.jpeg" alt="Article 3" />
+              <div class="journal-body">
+                <p class="journal-meta">Sep 19, 2014 / Identity</p>
+                <h3 class="journal-title">Cursus malesuada justo</h3>
+                <p class="journal-text text-box">
+                  Maecenas faucibus mollis interdum. Cum sociis natoque
+                  penatibus et magnis dis parturient montes.
+                </p>
+              </div>
+            </article>
+            <article class="journal-card">
+              <img src="./images/Article 4.avif" alt="Article 4" />
+              <div class="journal-body">
+                <p class="journal-meta">Sep 27, 2014 / Branding</p>
+                <h3 class="journal-title">Ornare cursus bibendum purus</h3>
+                <p class="journal-text text-box">
+                  Maecenas faucibus mollis interdum. Nullam id dolor id nibh
+                  ultricies vehicula.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
 
-            <!-- CONTACT / FOOTER -->
-            <footer class="site-footer" id="contact">
-                <div class="container footer-inner">
-                    <p>© 2014 Keepsake. All rights reserved.</p>
-                    <ul class="social">
-                        <li>
-                            <a href="#"
-                                ><img src="./icons/rss.png" alt="RSS"
-                            /></a>
-                        </li>
-                        <li>
-                            <a href="#"
-                                ><img src="./icons/facebook.png" alt="Facebook"
-                            /></a>
-                        </li>
-                        <li>
-                            <a href="#"
-                                ><img src="./icons/twitter.png" alt="Twitter"
-                            /></a>
-                        </li>
-                        <li>
-                            <a href="#"
-                                ><img
-                                    src="./icons/pinterest.png"
-                                    alt="Pinterest"
-                            /></a>
-                        </li>
-                    </ul>
-                </div>
-            </footer>
-        </main>
-    </body>
+      <!-- CONTACT / FOOTER -->
+      <footer class="site-footer" id="contact">
+        <div class="container footer-inner">
+          <p>© 2014 Keepsake. All rights reserved.</p>
+          <ul class="social">
+            <li>
+              <a href="#"><img src="./icons/rss.png" alt="RSS" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="./icons/facebook.png" alt="Facebook" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="./icons/twitter.png" alt="Twitter" /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="./icons/pinterest.png" alt="Pinterest"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </main>
+  </body>
 </html>
