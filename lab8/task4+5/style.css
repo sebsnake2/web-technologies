@@ -214,6 +214,19 @@ a:active {
   font-size: 1.3rem;
   text-transform: uppercase;
   letter-spacing: 0.07em;
+  position: relative;
+  padding-right: 40px;
+}
+
+.section-header h2::after {
+  content: "--";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--accent);
+  font-weight: 700;
+  letter-spacing: 2px;
 }
 
 .btn-outline {
