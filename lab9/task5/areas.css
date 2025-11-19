@@ -1,0 +1,103 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        sans-serif;
+    background: #fff7f7;
+    padding: 20px;
+}
+
+.page-title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.block {
+    border: 2px solid #ff4a3b;
+    padding: 8px 10px;
+}
+
+.layout-areas {
+    max-width: 960px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+
+    grid-template-areas:
+        "header"
+        "nav"
+        "main"
+        "sidebar"
+        "ads"
+        "footer";
+}
+
+.main {
+    min-height: 260px;
+}
+
+.header {
+    grid-area: header;
+}
+.nav {
+    grid-area: nav;
+}
+.main {
+    grid-area: main;
+}
+.sidebar {
+    grid-area: sidebar;
+}
+.ads {
+    grid-area: ads;
+}
+.footer {
+    grid-area: footer;
+}
+
+@media (min-width: 576px) {
+    .layout-areas {
+        grid-template-columns: 1fr 2fr;
+        grid-template-areas:
+            "header  header"
+            "nav     nav"
+            "sidebar main"
+            "ads     footer";
+    }
+
+    .main {
+        min-height: 260px;
+    }
+}
+
+@media (min-width: 768px) {
+    .layout-areas {
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-auto-rows: minmax(80px, auto);
+
+        grid-template-areas:
+            "header  header  header"
+            "sidebar nav     ads"
+            "sidebar main    ads"
+            "footer  footer  footer";
+    }
+
+    .sidebar {
+        grid-area: sidebar;
+    }
+
+    .ads {
+        grid-area: ads;
+    }
+
+    .main {
+        min-height: 260px;
+    }
+}
