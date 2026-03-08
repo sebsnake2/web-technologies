@@ -31,7 +31,7 @@ function task2_inRange() {
 
 function task2_toggle() {
     let state = true;
-    state != state;
+    state = !state;
 
     document.getElementById("out2").textContent =
         "Значення після NOT: " + state;
