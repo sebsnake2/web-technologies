@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="uk">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Завдання 3 — Date</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="container">
+            <h1>Завдання 3 — Робота з Date</h1>
+
+            <section class="block">
+                <h2>1. Поточна дата і час</h2>
+                <p id="currentDateTime">Завантаження...</p>
+            </section>
+
+            <section class="block">
+                <h2>2. Таймер до події</h2>
+                <label for="eventDate">Оберіть дату та час події:</label>
+                <input type="datetime-local" id="eventDate" />
+                <button id="calculateEventBtn">Порахувати</button>
+                <p id="eventResult">Ще не обрано подію.</p>
+            </section>
+
+            <section class="block">
+                <h2>3. Календар поточного місяця</h2>
+                <div id="calendarHeader"></div>
+                <table id="calendarTable">
+                    <thead>
+                        <tr>
+                            <th>Пн</th>
+                            <th>Вт</th>
+                            <th>Ср</th>
+                            <th>Чт</th>
+                            <th>Пт</th>
+                            <th>Сб</th>
+                            <th>Нд</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </section>
+
+            <section class="block">
+                <h2>4. Дні до дня народження</h2>
+                <label for="birthday">Оберіть дату народження:</label>
+                <input type="date" id="birthday" />
+                <button id="calculateBirthdayBtn">Порахувати</button>
+                <p id="birthdayResult">Дата народження ще не обрана.</p>
+            </section>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>

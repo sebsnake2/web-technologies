@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="uk">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Завдання 4 — Map, Set, WeakMap, WeakSet</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="container">
+            <h1>Облік товарів в інтернет-магазині</h1>
+
+            <section class="block">
+                <h2>1. Додати товар</h2>
+                <input type="text" id="productId" placeholder="ID товару" />
+                <input
+                    type="text"
+                    id="productName"
+                    placeholder="Назва товару"
+                />
+                <input
+                    type="number"
+                    id="productPrice"
+                    placeholder="Ціна"
+                    min="0"
+                />
+                <input
+                    type="number"
+                    id="productQuantity"
+                    placeholder="Кількість на складі"
+                    min="0"
+                />
+                <input
+                    type="text"
+                    id="productCategory"
+                    placeholder="Категорія"
+                />
+                <button id="addProductBtn">Додати товар</button>
+            </section>
+
+            <section class="block">
+                <h2>2. Видалити товар</h2>
+                <input
+                    type="text"
+                    id="deleteProductId"
+                    placeholder="ID товару для видалення"
+                />
+                <button id="deleteProductBtn">Видалити товар</button>
+            </section>
+
+            <section class="block">
+                <h2>3. Оновити товар</h2>
+                <input
+                    type="text"
+                    id="updateProductId"
+                    placeholder="ID товару"
+                />
+                <input
+                    type="number"
+                    id="updateProductPrice"
+                    placeholder="Нова ціна"
+                    min="0"
+                />
+                <input
+                    type="number"
+                    id="updateProductQuantity"
+                    placeholder="Нова кількість"
+                    min="0"
+                />
+                <button id="updateProductBtn">Оновити товар</button>
+            </section>
+
+            <section class="block">
+                <h2>4. Пошук товару за назвою</h2>
+                <input
+                    type="text"
+                    id="searchProductName"
+                    placeholder="Введіть назву товару"
+                />
+                <button id="searchProductBtn">Знайти товар</button>
+                <div id="searchOutput">Результат пошуку з’явиться тут.</div>
+            </section>
+
+            <section class="block">
+                <h2>5. Оформити замовлення</h2>
+                <input
+                    type="text"
+                    id="orderProductId"
+                    placeholder="ID товару"
+                />
+                <input
+                    type="number"
+                    id="orderQuantity"
+                    placeholder="Кількість для замовлення"
+                    min="1"
+                />
+                <button id="orderBtn">Оформити замовлення</button>
+            </section>
+
+            <section class="block">
+                <h2>Список товарів</h2>
+                <button id="showProductsBtn">Показати всі товари</button>
+                <div id="productsOutput">Товарів ще немає.</div>
+            </section>
+
+            <section class="block">
+                <h2>Категорії товарів (Set)</h2>
+                <button id="showCategoriesBtn">Показати категорії</button>
+                <div id="categoriesOutput">Категорій ще немає.</div>
+            </section>
+
+            <section class="block">
+                <h2>Історія замовлень (Map)</h2>
+                <button id="showOrdersBtn">Показати замовлення</button>
+                <div id="ordersOutput">Замовлень ще немає.</div>
+            </section>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="uk">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Завдання 1 — className та classList</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="container">
+            <h1>Завдання 1 — керування лампочкою</h1>
+
+            <div id="lamp" class="lamp off incandescent"></div>
+
+            <div class="controls">
+                <button id="toggleBtn">Увімкнути / Вимкнути</button>
+
+                <label for="lampType">Оберіть тип лампочки:</label>
+                <select id="lampType">
+                    <option value="incandescent">Звичайна лампочка</option>
+                    <option value="eco">Енергозберігаюча лампочка</option>
+                    <option value="led">Світлодіодна лампочка</option>
+                </select>
+
+                <label for="brightness">Яскравість:</label>
+                <input
+                    type="range"
+                    id="brightness"
+                    min="20"
+                    max="100"
+                    value="100"
+                />
+
+                <button id="setBrightnessBtn">Змінити яскравість</button>
+            </div>
+
+            <p id="statusText">Стан: вимкнено</p>
+            <p id="infoText">
+                Автоматичне вимкнення через 1 хвилину бездіяльності.
+            </p>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>

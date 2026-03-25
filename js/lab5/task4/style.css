@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 30px;
+}
+
+.container {
+    max-width: 950px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.block {
+    margin-bottom: 25px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+input {
+    display: block;
+    width: 100%;
+    max-width: 420px;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 8px;
+    background-color: #1976d2;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 8px;
+}
+
+button:hover {
+    background-color: #125ea8;
+}
+
+.product-card,
+.order-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 12px;
+    margin-top: 10px;
+    background-color: #fafafa;
+}
+
+.success {
+    color: green;
+    font-weight: bold;
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+}

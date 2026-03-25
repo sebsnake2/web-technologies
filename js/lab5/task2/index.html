@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="uk">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Завдання 2 — Світлофор</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="container">
+            <h1>Завдання 2 — Світлофор</h1>
+
+            <div class="traffic-light">
+                <div id="redLight" class="light red"></div>
+                <div id="yellowLight" class="light yellow"></div>
+                <div id="greenLight" class="light green"></div>
+            </div>
+
+            <p id="statusText">Поточний стан: червоний</p>
+            <p id="timerText">Залишилось: 5 с</p>
+
+            <div class="buttons">
+                <button id="startBtn">Запустити світлофор</button>
+                <button id="nextBtn">Наступний стан</button>
+                <button id="settingsBtn">Змінити тривалість</button>
+                <button id="stopBtn">Зупинити</button>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
