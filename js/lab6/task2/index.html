@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="uk">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Лабораторна робота №6</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <header class="header">
+            <div class="header__content">
+                <h1>Список завдань</h1>
+                <p>
+                    To-Do List з додаванням, редагуванням, видаленням та
+                    сортуванням
+                </p>
+            </div>
+        </header>
+
+        <main class="container">
+            <section class="panel">
+                <h2>Додати нове завдання</h2>
+
+                <form id="taskForm" class="task-form">
+                    <label for="taskInput" class="visually-hidden"
+                        >Введіть завдання</label
+                    >
+                    <input
+                        type="text"
+                        id="taskInput"
+                        name="taskInput"
+                        required
+                        minlength="2"
+                        maxlength="100"
+                        placeholder="Введіть нове завдання"
+                    />
+                    <button type="submit" class="btn btn--primary">
+                        Додати
+                    </button>
+                </form>
+            </section>
+
+            <section class="panel">
+                <h2>Сортування</h2>
+                <div class="buttons-row" id="sortButtons">
+                    <button
+                        type="button"
+                        class="btn btn--secondary"
+                        data-sort="createdAt"
+                    >
+                        Дата додавання: від новіших до старіших
+                    </button>
+                    <button
+                        type="button"
+                        class="btn btn--secondary"
+                        data-sort="completed"
+                    >
+                        Стан виконання: спочатку невиконані
+                    </button>
+                    <button
+                        type="button"
+                        class="btn btn--secondary"
+                        data-sort="updatedAt"
+                    >
+                        Дата оновлення: від новіших до старіших
+                    </button>
+                    <button
+                        type="button"
+                        class="btn btn--reset"
+                        id="resetSortBtn"
+                    >
+                        Скинути сортування
+                    </button>
+                </div>
+            </section>
+
+            <section class="tasks-section">
+                <p id="emptyMessage" class="empty-message hidden">
+                    Список завдань порожній. Додайте нове завдання.
+                </p>
+
+                <ul id="tasksList" class="tasks-list"></ul>
+            </section>
+        </main>
+
+        <div id="toast" class="toast hidden"></div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
