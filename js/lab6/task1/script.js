@@ -373,7 +373,7 @@ const editProduct = (formData) => {
     renderProducts();
     closeModal();
     showToast(
-        `Інформацію про товар "${updatedProduct.name}" успішно оновлено.`,
+        `Товар ID: ${updatedProduct.id}, "${updatedProduct.name}" успішно оновлено.`,
     );
 };
 
