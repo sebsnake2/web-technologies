@@ -122,18 +122,18 @@ const cancelEditingTask = () => {
     renderTasks();
 };
 
-const saveEditedTask = (id, inputValue) => {
-    const trimmedValue = inputValue.trim();
+const saveEditedTask = (id, editInput) => {
+    editInput.value = editInput.value.trim();
 
-    if (trimmedValue.length < 2) {
-        showToast("Текст завдання має містити щонайменше 2 символи.");
+    if (!editInput.checkValidity()) {
+        editInput.reportValidity();
         return;
     }
 
     state = {
         ...state,
         tasks: state.tasks.map((task) =>
-            task.id === id ? updateTaskText(task, trimmedValue) : task,
+            task.id === id ? updateTaskText(task, editInput.value) : task,
         ),
         editingTaskId: null,
     };
@@ -215,7 +215,7 @@ const createTaskView = (task) => {
         saveBtn.className = "btn btn--primary";
         saveBtn.textContent = "Зберегти";
         saveBtn.addEventListener("click", () =>
-            saveEditedTask(task.id, editInput.value),
+            saveEditedTask(task.id, editInput),
         );
 
         const cancelBtn = document.createElement("button");
@@ -226,7 +226,7 @@ const createTaskView = (task) => {
 
         editInput.addEventListener("keydown", (event) => {
             if (event.key === "Enter") {
-                saveEditedTask(task.id, editInput.value);
+                saveEditedTask(task.id, editInput);
             }
         });
 
