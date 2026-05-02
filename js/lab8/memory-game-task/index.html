@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="uk">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Memory Pair Game</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="app">
+            <h1>Memory Pair Game</h1>
+
+            <section id="settings" class="panel">
+                <h2>Налаштування гри</h2>
+
+                <div class="form-grid">
+                    <label>
+                        Режим гри
+                        <select id="playersCount">
+                            <option value="1">1 гравець</option>
+                            <option value="2">2 гравці</option>
+                        </select>
+                    </label>
+
+                    <label>
+                        Ім’я гравця 1
+                        <input
+                            id="playerOneName"
+                            type="text"
+                            value="Player 1"
+                        />
+                    </label>
+
+                    <label id="playerTwoBlock" class="hidden">
+                        Ім’я гравця 2
+                        <input
+                            id="playerTwoName"
+                            type="text"
+                            value="Player 2"
+                        />
+                    </label>
+
+                    <label>
+                        Рядки
+                        <input
+                            id="rowsCount"
+                            type="number"
+                            min="3"
+                            max="6"
+                            value="3"
+                        />
+                    </label>
+
+                    <label>
+                        Колонки
+                        <input
+                            id="columnsCount"
+                            type="number"
+                            min="4"
+                            max="6"
+                            value="4"
+                        />
+                    </label>
+
+                    <label>
+                        Складність
+                        <select id="difficulty">
+                            <option value="easy">Easy — 3 хв</option>
+                            <option value="normal">Normal — 2 хв</option>
+                            <option value="hard">Hard — 1 хв</option>
+                        </select>
+                    </label>
+
+                    <label>
+                        Кількість раундів
+                        <input
+                            id="roundsCount"
+                            type="number"
+                            min="1"
+                            max="5"
+                            value="1"
+                        />
+                    </label>
+                </div>
+
+                <div class="buttons">
+                    <button id="startGameBtn">Розпочати гру</button>
+                    <button id="resetSettingsBtn" type="button">
+                        Скинути налаштування
+                    </button>
+                </div>
+
+                <p id="settingsError" class="error"></p>
+            </section>
+
+            <section id="gameSection" class="hidden">
+                <div class="top-panel">
+                    <div>
+                        <strong>Раунд:</strong>
+                        <span id="currentRound">1</span> /
+                        <span id="totalRounds">1</span>
+                    </div>
+
+                    <div>
+                        <strong>Час:</strong>
+                        <span id="timer">00:00</span>
+                    </div>
+
+                    <div>
+                        <strong>Ходи:</strong>
+                        <span id="movesCount">0</span>
+                    </div>
+
+                    <div>
+                        <strong>Поточний гравець:</strong>
+                        <span id="currentPlayer">Player 1</span>
+                    </div>
+                </div>
+
+                <div id="scorePanel" class="score-panel"></div>
+
+                <div id="gameBoard" class="game-board"></div>
+
+                <div class="buttons">
+                    <button id="restartBtn">Рестарт</button>
+                </div>
+            </section>
+
+            <section id="resultsSection" class="panel hidden">
+                <h2>Статистика</h2>
+                <div id="roundResults"></div>
+                <h3 id="finalWinner"></h3>
+            </section>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
