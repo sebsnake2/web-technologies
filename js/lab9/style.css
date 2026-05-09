@@ -1,0 +1,210 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #74ebd5, #9face6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 15px;
+}
+
+.page {
+    width: 100%;
+    max-width: 520px;
+}
+
+.form-card {
+    background: #ffffff;
+    border-radius: 24px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.18);
+    padding: 28px;
+}
+
+.tabs {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+.tab {
+    width: 100%;
+    padding: 13px;
+    border: 2px solid #4da3ff;
+    background: #f3f9ff;
+    color: #2176c7;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.tab.active {
+    background: #4da3ff;
+    color: #ffffff;
+}
+
+.form {
+    display: none;
+}
+
+.form.active {
+    display: block;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 24px;
+    color: #222;
+    font-size: 26px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+}
+
+.field {
+    margin-bottom: 16px;
+}
+
+label {
+    display: block;
+    margin-bottom: 7px;
+    font-size: 14px;
+    color: #333;
+    font-weight: 600;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 12px 13px;
+    border: 2px solid #d8d8d8;
+    border-radius: 10px;
+    font-size: 14px;
+    outline: none;
+    transition: 0.25s;
+    background: white;
+}
+
+input:focus,
+select:focus {
+    border-color: #4da3ff;
+    box-shadow: 0 0 0 4px rgba(77, 163, 255, 0.15);
+}
+
+.password-wrapper {
+    position: relative;
+}
+
+.password-wrapper input {
+    padding-right: 48px;
+}
+
+.eye-btn {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+.radio-group {
+    display: flex;
+    gap: 20px;
+    padding-top: 4px;
+}
+
+.radio-group label {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-weight: 500;
+}
+
+.radio-group input {
+    width: auto;
+}
+
+.remember {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 18px;
+    font-weight: 500;
+}
+
+.remember input {
+    width: auto;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    background: linear-gradient(135deg, #4da3ff, #6c63ff);
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.submit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 24px rgba(77, 163, 255, 0.35);
+}
+
+small {
+    display: block;
+    min-height: 18px;
+    margin-top: 5px;
+    font-size: 12px;
+    color: #e74c3c;
+}
+
+.success-message {
+    margin-top: 15px;
+    text-align: center;
+    font-weight: 700;
+    color: #2ecc71;
+}
+
+.valid {
+    border-color: #2ecc71 !important;
+}
+
+.invalid {
+    border-color: #e74c3c !important;
+}
+
+select:disabled {
+    background: #eeeeee;
+    cursor: not-allowed;
+}
+
+@media (max-width: 520px) {
+    .form-card {
+        padding: 22px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    h1 {
+        font-size: 23px;
+    }
+}
