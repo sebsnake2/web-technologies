@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="uk">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Lab 10 - Friends Finder</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <div id="authModal" class="modal">
+            <form id="authForm" class="auth-card" novalidate>
+                <p class="eyebrow">Laboratory Work №10</p>
+                <h1>Friends Finder</h1>
+                <p class="muted">
+                    Введіть будь-який логін і пароль. Це фейкова авторизація
+                    через LocalStorage.
+                </p>
+
+                <label>
+                    Login
+                    <input
+                        id="loginInput"
+                        type="text"
+                        placeholder="Наприклад: admin"
+                    />
+                </label>
+
+                <label>
+                    Password
+                    <input
+                        id="passwordInput"
+                        type="password"
+                        placeholder="Наприклад: 123"
+                    />
+                </label>
+
+                <button type="submit" class="primary-btn">Sign in</button>
+            </form>
+        </div>
+
+        <header class="topbar">
+            <div>
+                <p class="eyebrow">Random User API</p>
+                <h1>Social Friends Search</h1>
+                <p class="muted">
+                    Пошук, фільтрація, сортування, пагінація та збереження
+                    друзів.
+                </p>
+            </div>
+
+            <div class="user-panel">
+                <span id="currentUserLabel"></span>
+                <button id="logoutBtn" class="ghost-btn">Logout</button>
+            </div>
+        </header>
+
+        <main class="layout">
+            <aside class="filters-card">
+                <h2>Filters</h2>
+
+                <label>
+                    Search by name
+                    <input
+                        id="searchInput"
+                        type="search"
+                        placeholder="Example: Anna"
+                    />
+                </label>
+
+                <label>
+                    Gender
+                    <select id="genderFilter">
+                        <option value="">All</option>
+                        <option value="female">Female</option>
+                        <option value="male">Male</option>
+                    </select>
+                </label>
+
+                <label>
+                    Age from
+                    <input
+                        id="minAgeFilter"
+                        type="number"
+                        min="0"
+                        max="100"
+                        placeholder="18"
+                    />
+                </label>
+
+                <label>
+                    Age to
+                    <input
+                        id="maxAgeFilter"
+                        type="number"
+                        min="0"
+                        max="100"
+                        placeholder="60"
+                    />
+                </label>
+
+                <label>
+                    Birth year
+                    <input
+                        id="birthYearFilter"
+                        type="number"
+                        min="1920"
+                        max="2026"
+                        placeholder="1998"
+                    />
+                </label>
+
+                <label>
+                    City / Country
+                    <input
+                        id="locationFilter"
+                        type="text"
+                        placeholder="London, France..."
+                    />
+                </label>
+
+                <label>
+                    Email
+                    <input
+                        id="emailFilter"
+                        type="text"
+                        placeholder="example@mail.com"
+                    />
+                </label>
+
+                <label>
+                    Sort
+                    <select id="sortSelect">
+                        <option value="">Default</option>
+                        <option value="name-asc">Name A-Z</option>
+                        <option value="name-desc">Name Z-A</option>
+                        <option value="age-asc">Age ascending</option>
+                        <option value="age-desc">Age descending</option>
+                        <option value="registered-asc">
+                            Registration old-new
+                        </option>
+                        <option value="registered-desc">
+                            Registration new-old
+                        </option>
+                    </select>
+                </label>
+
+                <div class="side-actions">
+                    <button id="applyBtn" class="primary-btn" type="button">
+                        Apply
+                    </button>
+                    <button id="resetBtn" class="ghost-btn" type="button">
+                        Reset
+                    </button>
+                </div>
+            </aside>
+
+            <section class="content">
+                <div class="content-head">
+                    <div>
+                        <h2>Users</h2>
+                        <p id="resultCounter" class="muted"></p>
+                    </div>
+                    <div id="statusMessage" class="status"></div>
+                </div>
+
+                <div id="cardsContainer" class="cards-grid"></div>
+
+                <nav id="pagination" class="pagination"></nav>
+
+                <div id="loader" class="loader hidden">
+                    Loading more users...
+                </div>
+            </section>
+        </main>
+
+        <script src="script.js"></script>
+    </body>
+</html>
